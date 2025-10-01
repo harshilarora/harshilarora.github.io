@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add active class to current nav item
+//  active class to current nav item
 const currentLocation = window.location.hash || '#info';
 document.querySelectorAll('.nav-links a').forEach(link => {
     if (link.getAttribute('href') === currentLocation) {
@@ -44,7 +44,6 @@ window.addEventListener('scroll', () => {
         const sectionTop = skillsSection.offsetTop;
         const sectionHeight = skillsSection.offsetHeight;
         
-        // Only apply parallax when section is in view
         if (scrollPosition + window.innerHeight > sectionTop && 
             scrollPosition < sectionTop + sectionHeight) {
             const yPos = -(scrollPosition - sectionTop) * 0.5;
