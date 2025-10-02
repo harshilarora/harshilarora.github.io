@@ -65,7 +65,6 @@
             align-items: start;
         }
 
-        /* Left Column - Large Heading */
         .left-column {
             padding-right: 40px;
         }
@@ -79,7 +78,6 @@
             letter-spacing: -0.5px;
         }
 
-        /* Right Column - Content */
         .right-column {
             padding-top: 200px;
             max-width: 600px;
