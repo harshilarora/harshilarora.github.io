@@ -603,3 +603,80 @@ h1 {
         font-size: 14px;
         font-weight: 300;
     }
+    
+
+
+
+    /* styling for Assignment 3 */
+
+
+.visualizations {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 8rem 15rem;
+
+
+}
+
+.visualizations > div[id="observablehq-"] {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.visualizations h1,
+.visualizations h2,
+.visualizations h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  background: #464646;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  
+}
+
+.visualizations p {
+  color: #d5d5d5;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: left;
+  margin: 15px 0;
+
+  
+}
+
+
+[id^="observablehq-viewof-"] {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.visualizations a {
+  color: #ffc107;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.visualizations a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .visualizations {
+    padding: 120px 25px 80px;
+    gap: 40px;
+  }
+
+  .visualizations p {
+    font-size: 0.95rem;
+  }
+}
