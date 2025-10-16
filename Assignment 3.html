@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations Gallery</title>
+    <link rel="stylesheet" href="Style.css">
+
+
+    <!-- js script -->
+    <script src="main.js"></script>
+    <script type="module" src="vis.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">harshil arora.</div>
+        <ul class="nav-links">
+            <li><a href="#visualizations" class="active">Visualizations</a></li>
+            <li><a href="index.html" >INFO</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main class="visualizations" >
+    
+        <div id="observablehq-p1-4a528182"></div>
+        <div id="observablehq-h1-4a528182"></div>
+        <div id="observablehq-vis1-4a528182"></div>
+        <div id="observablehq-P2-4a528182"></div>
+        <div id="observablehq-p3-4a528182"></div>
+        <div id="observablehq-h2-4a528182"></div>
+        <div id="observablehq-viewof-category-4a528182"></div>
+        <div id="observablehq-vis2-4a528182"></div>
+        <div id="observablehq-p4-4a528182"></div>
+        <div id="observablehq-p5-4a528182"></div>
+        <div id="observablehq-p6-4a528182"></div>
+        <div id="observablehq-h4-4a528182"></div>
+        <div id="observablehq-vis3-4a528182"></div>
+        <div id="observablehq-p7-4a528182"></div>
+        <div id="observablehq-p8-4a528182"></div>
+        <div id="observablehq-h5-4a528182"></div>
+        <div id="observablehq-viewof-regionFilter-4a528182"></div>
+        <div id="observablehq-vis4-4a528182"></div>
+        <div id="observablehq-p9-4a528182"></div>
+        <div id="observablehq-p10-4a528182"></div>
+        
+<p>Credit: <a href="https://observablehq.com/d/3d5a2a32f9a59fa2@875">Untitled by Simon fraser University</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
+
+
+</main>
+
+<!-- Add below your other script -->
+<script type="module" src="vis.js"></script>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/3d5a2a32f9a59fa2@875.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "p1") return new Inspector(document.querySelector("#observablehq-p1-4a528182"));
+  if (name === "h1") return new Inspector(document.querySelector("#observablehq-h1-4a528182"));
+  if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-4a528182"));
+  if (name === "P2") return new Inspector(document.querySelector("#observablehq-P2-4a528182"));
+  if (name === "p3") return new Inspector(document.querySelector("#observablehq-p3-4a528182"));
+  if (name === "h2") return new Inspector(document.querySelector("#observablehq-h2-4a528182"));
+  if (name === "viewof category") return new Inspector(document.querySelector("#observablehq-viewof-category-4a528182"));
+  if (name === "vis2") return new Inspector(document.querySelector("#observablehq-vis2-4a528182"));
+  if (name === "p4") return new Inspector(document.querySelector("#observablehq-p4-4a528182"));
+  if (name === "p5") return new Inspector(document.querySelector("#observablehq-p5-4a528182"));
+  if (name === "p6") return new Inspector(document.querySelector("#observablehq-p6-4a528182"));
+  if (name === "h4") return new Inspector(document.querySelector("#observablehq-h4-4a528182"));
+  if (name === "vis3") return new Inspector(document.querySelector("#observablehq-vis3-4a528182"));
+  if (name === "p7") return new Inspector(document.querySelector("#observablehq-p7-4a528182"));
+  if (name === "p8") return new Inspector(document.querySelector("#observablehq-p8-4a528182"));
+  if (name === "h5") return new Inspector(document.querySelector("#observablehq-h5-4a528182"));
+  if (name === "viewof regionFilter") return new Inspector(document.querySelector("#observablehq-viewof-regionFilter-4a528182"));
+  if (name === "vis4") return new Inspector(document.querySelector("#observablehq-vis4-4a528182"));
+  if (name === "p9") return new Inspector(document.querySelector("#observablehq-p9-4a528182"));
+  if (name === "p10") return new Inspector(document.querySelector("#observablehq-p10-4a528182"));
+  return ["filteredData"].includes(name);
+});
+</script>
+
+</body>
+</html>
